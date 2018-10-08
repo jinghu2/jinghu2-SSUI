@@ -12,8 +12,14 @@
     <!-- javascript -->
     <script src="main.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- styles-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" href="images/feather.png" />
+    <!-- Search-->
+    <meta name="author" content="Jing Hu">
+    <meta name="keywords" content="Fluff Stuff, pillow, shopping">
+    <meta name="description" content="Fluff Stuff, a stylish pillow company.">
+    <!-- Website title-->
     <title>Fluff Stuff</title>
 </head>
 
@@ -42,7 +48,7 @@
     <!-- Filter and list header -->
     <div class="row">
         <div class="col-2" style="padding-bottom: 0px">
-            <ul>
+            <ul style ='margin-bottom: 0; padding-bottom: 0'>
                 <li>
                     <h2 class="filter">Shop All</h2>
                 </li>
@@ -67,9 +73,8 @@
             <h1>Shop by</h1>
             <span>Home / Fall picks</span>
             <h4 class="results">46 Results</h4>
-            <br />
             Sort by:
-            <select class="custom-select">
+            <select class="sort-select">
                 <option id="option-1">Price: low to high</option>
                 <option id="option-2">Price: high to low</option>
                 <option id="option-3">Customer rating</option>
@@ -83,14 +88,14 @@
     <!-- Product list -->
     <div class='row'>
         <div class='col-2'></div>
-        <div class='col-10'>
+        <div class='col-10' style='padding-top: 0'>
             <table>
                 <!-- First row -->
                 <tr>
                     <th class='product'><a href='detail.html'><img src="images/bottles.PNG" id="bottles" ></a>
                         <div>
                             <span class="dot" style="background-color: pink" onmouseover="turnPink(this)" onmouseout="turnNormal(this)"></span>
-                            <span class="dot" style="background-color:lightblue" onmouseover="turnBlue(this)" onmouseout="turnNormal(this)" onclick="everBlue(this)"></span>
+                            <span class="dot" style="background-color:lightblue" onmouseover="turnBlue(this)" onmouseout="turnNormal(this)"></span>
                             <span class="dot" style="background-color:darkseagreen" onmouseover="turnGreen(this)" onmouseout="turnNormal(this)"></span>
                             <span class="dot" style="background-color:steelblue" onmouseover="turnDemi(this)" onmouseout="turnNormal(this)"></span>
                         </div>
